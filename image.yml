@@ -1,0 +1,19 @@
+name: image  # for image analysis
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+- python=3.7.3=h8c8aaf0_1
+- matplotlib=3.0.3=py37hc8f65d3_0
+- numpy=1.16.3=py37h19fb1c0_0
+- pandas=0.24.2=py37ha925a31_0
+- scipy=1.2.1=py37h29ff71c_0
+- scikit-image=0.15.0=py37ha925a31_0
+- moviepy=0.2.3.5=py_0
+- imageio=2.4.1=py37_0
+- requests
+- ipykernel
+- tk
+- palettable
+- pip

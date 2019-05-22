@@ -1,0 +1,21 @@
+name: oled  # for oled calculation and analysis
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python
+- matplotlib
+- numpy
+- pandas
+- scipy
+- statsmodels
+- jupyter
+- ipykernel
+- jupyter_contrib_nbextensions
+- palettable
+- pymongo
+- pip
+- ipykernel
+- pip:
+    - tmm==0.1.7
+    - fuzzywuzzy==0.17.0
