@@ -3,8 +3,8 @@ channels:
 - defaults
 - conda-forge
 dependencies:
-- python
-- matplotlib
+- python=3.7.3=h8c8aaf0_1
+- matplotlib=3.0.3=py37hc8f65d3_0
 - numpy
 - pandas
 - scipy
@@ -15,7 +15,6 @@ dependencies:
 - palettable
 - pymongo
 - pip
-- ipykernel
 - pip:
     - tmm==0.1.7
     - fuzzywuzzy==0.17.0
