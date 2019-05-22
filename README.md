@@ -11,3 +11,9 @@ Anaconda environments and set-up
     ```
     conda env create -f environment.yml
     ```
+3. Set-up IPython kernels (docs [here](https://ipython.readthedocs.io/en/latest/install/kernel_install.html#kernels-for-python-2-and-3)). From within a given environment, the name of the kernel can be defined by running:
+   ```
+   conda activate myenv
+   python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+   ```
+This ensures that the environment will show up as a kernel in your jupyter notebooks.
