@@ -16,4 +16,15 @@ Anaconda environments and set-up
    conda activate myenv
    python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
    ```
-This ensures that the environment will show up as a kernel in your jupyter notebooks.
+   This ensures that the environment will show up as a kernel in your jupyter notebooks.
+   
+4. Make sure the base environment has numpy installed. There seems to be an [issue](https://github.com/jupyter/notebook/issues/4569) with this currently.
+
+5. To update an environment.yml file:
+   ```
+   conda env export > environment.yml
+   ```
+6. Update an existing environment based on a new environment.yml file:
+   ```
+   conda env update --file environment.yml
+   ```
