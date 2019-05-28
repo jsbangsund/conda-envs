@@ -90,14 +90,13 @@
 ## The base URL for the notebook server.
 #  
 #  Leading and trailing slashes can be omitted, and will automatically be added.
-#c.NotebookApp.base_url = 'C:/Users/JSB/Google Drive'
+#c.NotebookApp.base_url = '/'
 
 ## Specify what command to use to invoke a web browser when opening the notebook.
 #  If not specified, the default browser will be determined by the `webbrowser`
 #  standard library module, which allows setting of the BROWSER environment
 #  variable to override it.
-# See http://christopherroach.com/articles/jupyterlab-desktop-app/
-c.NotebookApp.browser = '"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --app=%s'
+#c.NotebookApp.browser = ''
 
 ## The full path to an SSL/TLS certificate file.
 #c.NotebookApp.certfile = ''
@@ -377,6 +376,47 @@ c.NotebookApp.browser = '"C:\Program Files (x86)\Google\Chrome\Application\chrom
 #  
 #  Should be in the form of an HTTP origin: ws[s]://hostname[:port]
 #c.NotebookApp.websocket_url = ''
+
+#------------------------------------------------------------------------------
+# LabApp(NotebookApp) configuration
+#------------------------------------------------------------------------------
+
+## The app directory to launch JupyterLab from.
+#c.LabApp.app_dir = 'C:\\Users\\JSB\\Miniconda3\\share\\jupyter\\lab'
+
+## Whether to start the app in core mode. In this mode, JupyterLab will run using
+#  the JavaScript assets that are within the installed JupyterLab Python package.
+#  In core mode, third party extensions are disabled. The `--dev-mode` flag is an
+#  alias to this to be used when the Python package itself is installed in
+#  development mode (`pip install -e .`).
+#c.LabApp.core_mode = False
+
+## The default URL to redirect to from `/`
+#c.LabApp.default_url = '/lab'
+
+## Whether to start the app in dev mode. Uses the unpublished local JavaScript
+#  packages in the `dev_mode` folder.  In this case JupyterLab will show a red
+#  stripe at the top of the page.  It can only be used if JupyterLab is installed
+#  as `pip install -e .`.
+#c.LabApp.dev_mode = False
+
+## The override url for static lab assets, typically a CDN.
+#c.LabApp.override_static_url = ''
+
+## The override url for static lab theme assets, typically a CDN.
+#c.LabApp.override_theme_url = ''
+
+## The directory for user settings.
+#c.LabApp.user_settings_dir = 'C:\\Users\\JSB\\.jupyter\\lab\\user-settings'
+
+## Whether to serve the app in watch mode
+#c.LabApp.watch = False
+
+## The directory for workspaces
+#c.LabApp.workspaces_dir = 'C:\\Users\\JSB\\.jupyter\\lab\\workspaces'
+
+# See http://christopherroach.com/articles/jupyterlab-desktop-app/
+c.LabApp.browser = '"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --app=%s'
 
 #------------------------------------------------------------------------------
 # ConnectionFileMixin(LoggingConfigurable) configuration
