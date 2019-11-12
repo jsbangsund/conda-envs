@@ -12,6 +12,7 @@ dependencies:
   - statsmodels
   - palettable
   - pymongo
+  - pywin32=223=py37hfa6e2cd_1
   - pip
   - tqdm=4.32.1=py_0
   - colour-science=0.3.13=py_0
