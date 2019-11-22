@@ -10,6 +10,7 @@ dependencies:
   - pandas
   - scipy
   - statsmodels
+  - seaborn
   - palettable
   - pymongo
   - pywin32=223=py37hfa6e2cd_1
