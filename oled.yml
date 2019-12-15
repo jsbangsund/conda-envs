@@ -33,3 +33,4 @@ dependencies:
     - tmm==0.1.7
     - fuzzywuzzy==0.17.0
     - originext==1.0.6
+    - python-Levenshtein
