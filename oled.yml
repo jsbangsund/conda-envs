@@ -13,7 +13,7 @@ dependencies:
   - seaborn
   - palettable
   - pymongo
-  - pywin32=223=py37hfa6e2cd_1
+  #- pywin32=223=py37hfa6e2cd_1 # No longer needed. Use originext instead.
   - pillow
   - pip
   - tqdm=4.32.1=py_0
@@ -30,6 +30,8 @@ dependencies:
   - jupyter_highlight_selected_word=0.2.0=py37_1000
   - jupyter_latex_envs=1.4.4=py37_1000
   - jupyter_nbextensions_configurator=0.4.1=py37_0
+  - jupyterlab
+  - nodejs # for jupyterlab extensions
   - pip:
     - tmm==0.1.7
     - fuzzywuzzy==0.17.0
